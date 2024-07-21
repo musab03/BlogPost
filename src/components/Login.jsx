@@ -26,6 +26,8 @@ function Login() {
     }
   };
 
+  const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+
   return (
     <div className="flex items-center justify-center w-full">
       <div
@@ -58,7 +60,7 @@ function Login() {
                 {...register("email", {
                     required: true,
                     validate: {
-                        matchPatern: (value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+                        matchPatern: (value) => emailRegex.test(value) ||
                         "Email address must be a valid address",
                     }
                 })}
