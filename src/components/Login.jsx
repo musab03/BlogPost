@@ -45,7 +45,7 @@ function Login() {
           Don&apos;t have any account?&nbsp;
           <Link
             to="/signup"
-            className="font-medium text-primary transition-all duration-200 hover:underline"
+            className=" font-medium text-primary transition-all duration-200 hover:underline"
           >
             Sign Up
           </Link>
@@ -75,7 +75,7 @@ function Login() {
                 />
                 <Button
                 type="submit"
-                className="w-full"
+                className="w-full hover:bg-blue-500"
                 >Sign in</Button>
             </div>
             
