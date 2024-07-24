@@ -32,7 +32,7 @@ export default function Post() {
         });
     };
 
-    console.log(post)
+    
 
     return post ? (
         <div className="py-8">

@@ -67,7 +67,7 @@ export class Service {
 
   async getPost(slug) {
     try {
-      return await this.databases.getDocumentDocument(
+      return await this.databases.getDocument(
         config.appwriteDatabaseId,
         config.appwriteCollectionId,
         slug
@@ -126,13 +126,10 @@ export class Service {
   // }
 
   getFilePreview(fileId) {
-    console.log(fileId)
     if (!fileId) {
       throw new Error("fileId is required");
     }
-    // console.log(this.client.call)
     return this.bucket.getFilePreview(config.appwriteBucketId, fileId);
-    // return this.client.call('GET', `/storage/buckets/6694904000287578123d/files/${fileId}/preview`);
   }
 
 }

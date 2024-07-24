@@ -36,13 +36,15 @@ export const Header = () => {
     },
   ];
 
+  
+
   return (
     <header className="py-3 shadow bg-gray-500">
       <Container>
         <nav className="flex">
-          <div className="mr-4">
+          <div className=" ml-4 mr-4">
             <Link to="/">
-              <Logo width="70px" />
+              <Logo width="40px" />
             </Link>
           </div>
           <ul className="flex ml-auto">
@@ -60,7 +62,7 @@ export const Header = () => {
             )}
             {authStatus && (
               <li>
-                <LogoutBtn/>
+                <LogoutBtn />
               </li>
             )}
           </ul>
@@ -69,3 +71,5 @@ export const Header = () => {
     </header>
   );
 };
+
+

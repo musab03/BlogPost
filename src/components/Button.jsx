@@ -13,7 +13,7 @@ export default function Button({
   const appliedBgColor = bgColor !== undefined ? bgColor : defaultBgColor;
 
   return (
-    <button type={type} className={`px-4 py-2 rounded-lg  ${className} ${appliedBgColor} ${textColor}`} {...props}>
+    <button type={type} className={`px-4 py-2 rounded-lg hover:bg-blue-500 ${className} ${appliedBgColor} ${textColor}`} {...props}>
         {children}
     </button> 
  )
