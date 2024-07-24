@@ -83,7 +83,7 @@ export class Service {
       return await this.databases.listDocuments(
         config.appwriteDatabaseId,
         config.appwriteCollectionId,
-        queries
+        queries,
       );
     } catch (error) {
       console.log("Appwrite service :: createPost :: error ", error);
@@ -109,16 +109,34 @@ export class Service {
   async deleteFile(fileId) {
     try {
       await this.bucket.deleteFile(config.appwriteBucketId, fileId);
+      return true
     } catch (error) {
       console.log("Appwrite service :: createPost :: error ", error);
       return false;
     }
   }
+  
+  // getFilePreview(fileId) {
+  //   console.log(fileId)
+
+  //   if (fileId != fileId) {
+  //     return this.bucket.getFilePreview(config.appwriteBucketId, fileId);
+      
+  //   }
+  // }
 
   getFilePreview(fileId) {
+    console.log(fileId)
+    if (!fileId) {
+      throw new Error("fileId is required");
+    }
+    // console.log(this.client.call)
     return this.bucket.getFilePreview(config.appwriteBucketId, fileId);
+    // return this.client.call('GET', `/storage/buckets/6694904000287578123d/files/${fileId}/preview`);
   }
+
 }
+
 
 const service = new Service();
 
