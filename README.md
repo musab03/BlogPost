@@ -103,4 +103,4 @@ The application will be available at `http://localhost:3000`.
 
 ## Contact
 
-For any questions or inquiries, please contact [yourname@example.com](mailto:musab.khurram@gmail.com).
+For any questions or inquiries, please contact [musab](mailto:musab.khurram@gmail.com).
