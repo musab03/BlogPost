@@ -5,6 +5,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import store from './store/store.js';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Login from './pages/Login.jsx'; // Assuming paths are corrected
 import Signup from './pages/Signup.jsx';
