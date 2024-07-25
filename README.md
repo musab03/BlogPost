@@ -2,6 +2,10 @@
 
 This is a BlogPost application built using React, Appwrite, and deployed on Vercel. The app allows users to create, read, update, and delete blog posts.
 
+## Demo
+
+Check out the live demo of the application: [BlogPost App](https://blog-post-opal.vercel.app)
+
 ## Table of Contents
 
 - [Features](#features)
@@ -99,4 +103,4 @@ The application will be available at `http://localhost:3000`.
 
 ## Contact
 
-For any questions or inquiries, please contact [musab.khurram@gmail.com]
+For any questions or inquiries, please contact [yourname@example.com](mailto:musab.khurram@gmail.com).
